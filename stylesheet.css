@@ -22,6 +22,15 @@
     padding-right:10px;
 }
 
+.install_tags{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 30px;
+    border-bottom: 3px solid rgb(0,0,0);
+    display: inline;
+}
+
 #prep_section{
     padding-left: 30px;
+    font-size:17px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
