@@ -1,5 +1,12 @@
+.marigns{
+    margin-right:2cm;
+    margin-left:2cm;
+    background-color: rgb(154,160,168);
+}
+
+
 .main_section{
-    background-color: rgb(154, 160, 168);
+    background-color: rgb(190, 255, 199);
 }
 
 .main_title{
@@ -22,6 +29,12 @@
     padding-right:10px;
 }
 
+.step{
+    padding-right:10px;
+    max-width: 700px;
+    max-height: 700px;
+}
+
 .install_tags{
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     font-size: 30px;
@@ -33,4 +46,19 @@
     padding-left: 30px;
     font-size:17px;
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+
+.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 2px;
 }
