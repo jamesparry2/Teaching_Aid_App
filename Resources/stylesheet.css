@@ -11,7 +11,7 @@
 
 .main_title{
     text-align: center;
-    font-size: 90px;
+    font-size: 70px;
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
     padding-left: 5px;
     padding-right: 5px;
@@ -29,10 +29,21 @@
     padding-right:10px;
 }
 
+.image2{
+    max-width: 1000px;
+    max-height: 700px;
+}
+
 .step{
     padding-right:10px;
     max-width: 700px;
     max-height: 700px;
+}
+
+.step_section{
+    padding-left: 30px;
+    font-size:17px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
 
 .install_tags{
@@ -43,6 +54,12 @@
 }
 
 #prep_section{
+    padding-left: 30px;
+    font-size:17px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+#question_section{
     padding-left: 30px;
     font-size:17px;
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
@@ -62,3 +79,5 @@
 	  stroke: #ccc;
 	  stroke-width: 2px;
 }
+
+    
