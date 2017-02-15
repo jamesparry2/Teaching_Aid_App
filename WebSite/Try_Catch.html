@@ -16,7 +16,7 @@
                 
                 <div class = "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class = "nav navbar-nav">
-                        <li class = "active"><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li class = ""><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
                         <li><a href = "Overview.html">Overview</a></li>
                         <li class = "dropdown">
                             <a href = "" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Basic Topics <span class="caret"></span></a>
@@ -76,6 +76,59 @@
     <div class="title_section">
         <h1 class = "main_title">Handling Exceptions</h1>
     </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class = "install_tags">Section 2: Handling Exceptions</h3>
+        <br/>
+        <br/>
+        <p> When dealing with errors in programming there are two aspects: detection and handling. Detection is more easier to achive then handling an exception. For example 
+        if we have an array that has a defined size of 25 but we try and add 26 elements to it we will produce ArrayIndexOutOfBound Exception. This shows detection is more simplier
+        than handling the error. Exception Handling provides us a flexible option to how we deal and control errors. An example of the producing the Array error can be seen below: </p>
+        <img src = "C:/Users/James/Desktop/Teaching_Aid_App/Resources/ArrayIndex.png" alt = "Array Exception Example"/>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class = "install_tags">Section 2.1: Throwing/Catching Excpetions</h3>
+        <br/>
+        <br/>
+        <h4>Throwing Exceptions: </h4>
+        <p>There are many ways to deal with excptions, one way is to use the throw keyword. This is used in cases where we know what exception can happen and want to deal with it
+        in the appropriate manner. When you throw an exception, execution does not continue with the next statement but with an exception handler. </p>
+        <h4>Catching Exceptions: </h4>
+        <p> The most common way to deal with catched exceptions is using a try/catch block. A try/catch is placed within the program. The try statement contains one or more statements
+        that could produce the exception that are you willing to catch in the catch clause. An example of this can be seen below:  </p>
+        <img src = "C:/Users/James/Desktop/Teaching_Aid_App/Resources/TryCatch.png" alt = "TryCatch Exception Example"/>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class = "install_tags">Checked/Unchecked Exception and Finally Clause</h3>
+        <br/>
+        <br/>
+        <h4>Checked Exception: </h4>
+        <p> The exceptions represent recovarable aspects in the program. These are recovarable due to the try/catch block and are subsets of the Exception class. </p>
+        <h4>Unchecked Exceptions: </h4>
+        <p> These exception represent defects in the program. To quote from The Java Programming Language, by Gosling, Arnold and Holmes: "Unchecked runtime exceptions represent conditions that,
+        generally speaking, reflect errors in your programs logic and connot be reasonanly recoved from at run time." You can not establish try/catch exeptions for unchecked exceptions. </p>
+        <h4>Finally Clause:</h4>
+        <p>Sometimes there will be cases where you need to excute a block of code, regardless if an exception is thrown or not. The finally clause will always execute when the try bloke exits. This
+        is good in cases such that if you are to open a file stream, you can use the finally clause to ensure it is closed. This example can be viewed below: </p>
+        <img src = "C:/Users/James/Desktop/Teaching_Aid_App/Resources/Finally.png" alt = "Finally Example"/>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class="install_tags"> Video Segment </h3>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class="install_tags"> Question Segment </h3>
+    </div>
+    <br/>
+    <br/>
     </body>
 </html>
         
