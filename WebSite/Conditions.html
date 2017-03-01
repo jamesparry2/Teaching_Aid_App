@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="C:/Users/James/Desktop/Teaching_Aid_App/Resources/stylesheet.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="C:/Users/James/Desktop/Teaching_Aid_App/Script Files/Questions.js"></script>    
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script src="C:/Users/James/Desktop/Teaching_Aid_App/Script Files/bootstrap.min.js"></script>
     </head>
@@ -192,6 +193,7 @@
             <p>If else statements are a slightly more advanced way of asking for multiple condition in a single decision. However logic/runtime errors can occur. A common error
             that programmers do not consider the order of the conditions. As stated earlier you should always aim to put very specfic conditions at the top and place more generalised
             conditions in the branch. Examples of poorly designed and good designs can be seen below:</p>
+            <img src = "C:/Users/James/Desktop/Teaching_Aid_App/Resources/BadIf.png" alt = "Example of Nested Conditions"/>
         </div>
         <br/>
         <br/>
@@ -218,14 +220,24 @@
         <br/>
         <div class = "step_section">
             <h3 class="install_tags"> Video Segment </h3>
+            <br>
+            <br>
+            <iframe class = "videoTutorial" src="https://www.youtube.com/embed/H8jJoqrq0ko" frameborder="0" allowfullscreen></iframe>  
         </div>
         <br/>
         <br/>
-        <div class = "step_section">
-            <h3 class="install_tags"> Question Segment </h3>
+               <div class = "step_section">
+            <h3 class = "install_tags">Question Segment</h3>
         </div>
-        <br/>
-        <br/>
+        <div>
+            <div id = "question_section">
+            <p><button onClick = "DisplayQuestion('conditions')">Question Time!</button></p>
+            <p id = "question"></p>
+            <p id = "answers"></p>
+            <p id = "button"></p>
+            <p id = "score"></p>    
+            </div>
+        </div>
     </body>
     
 </html>

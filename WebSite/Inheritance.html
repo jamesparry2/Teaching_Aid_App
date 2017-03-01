@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="C:/Users/James/Desktop/Teaching_Aid_App/Resources/stylesheet.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="C:/Users/James/Desktop/Teaching_Aid_App/Script Files/Questions.js"></script>        
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script src="C:/Users/James/Desktop/Teaching_Aid_App/Script Files/bootstrap.min.js"></script>
     </head>
@@ -16,7 +17,7 @@
                 
                 <div class = "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class = "nav navbar-nav">
-                        <li class = "active"><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li class = ""><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
                         <li><a href = "Overview.html">Overview</a></li>
                         <li class = "dropdown">
                             <a href = "" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Basic Topics <span class="caret"></span></a>
@@ -133,6 +134,9 @@
     <br/>
     <div class = "step_section">
         <h3 class="install_tags"> Video Segment </h3>
+        <br/>
+        <br/>
+        <iframe class = "videoTutorial" src="https://www.youtube.com/embed/U2HgYkWPSlY" frameborder="0" allowfullscreen></iframe>  
     </div>
     <br/>
     <br/>
@@ -140,6 +144,16 @@
         <h3 class="install_tags"> Question Segment </h3>
     </div>
     <br/>
+    <br/>
+    <div>
+        <div id = "question_section">
+        <p><button onClick = "DisplayQuestion('inheritance')">Question Time!</button></p>
+        <p id = "question"></p>
+        <p id = "answers"></p>
+        <p id = "button"></p>
+        <p id = "score"></p>    
+    </div>
+    </div>
     <br/>
     </body>
 </html>

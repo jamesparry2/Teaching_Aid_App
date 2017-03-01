@@ -76,25 +76,38 @@
                 </div>
             </div>    
         </nav>
-        
+        <div id = "title_section">
+            <h1 class = "main_title">Overview</h1>
+        </div>
+        <br/>
+        <br/>
+        <div class = "step_section">
+            <h3 class = "install_tags">Overview</h3>
+            <br/>
+            <br/>
+            <p>This page highlights the structure that the Teaching Aid Application will be following throughout the Website. This chart has been designed with the partial interactivity which will allow you guys to click on any node and it will take you to the deseried web page. This model knowledge map has been designed with you
+            in mind, it follows great dependency design so if you follow the flow of the digram you will not strugle majorly in any section. As before if you skip any section
+            it may cause you to strugle with some questions in more advanced topics as there will be aspects that are being built up. Hopefully this shows you that this is not
+            a daunting task and that you are up for the challenge!.</p>
+        </div>
         <div class = "graph">
         <script>
 
             var treeData = [
               {
-                "name": "Data Fundementals", "parent": "null","children": [
+                "name": "Data Fundementals", "url": "Data_Fundementals.html" ,"parent": "null","children": [
                   {
-                    "name": "Conditions","parent": "Top Level","children": [
+                    "name": "Conditions", "url": "Conditions.html" ,"parent": "Top Level","children": [
                       {
-                        "name": "Loops","parent": "Level 2","children": [
+                        "name": "Loops", "url":"Loops.html" , "parent": "Level 2","children": [
                             {
-                                "name" : "Arrays/ArrayLists","parent": "Level 3","children" : [
+                                "name" : "Collections", "url": "Collections.html" ,"parent": "Level 3","children" : [
                                     {
-                                        "name" : "Methods","parent": "Level 4","children":[
+                                        "name" : "Methods", "url": "Methods.html", "parent": "Level 4","children":[
                                             {
-                                                "name": "Objects/Classes", "parent":"Level 5", "children":[
+                                                "name": "Object Orientation Paradigm", "url": "OOSection.html", "parent":"Level 5", "children":[
                                                     {
-                                                        "name": "Inheritance", "parent":"Level 6", "children": [
+                                                        "name": "Inheritance", "url": "Inheritance.html" ,"parent":"Level 6", "children": [
                                                             {
                                                                 "name": "GUI", "parent":"Level 7" 
                                                             }
@@ -103,9 +116,9 @@
                                                 ]
                                             },
                                             {
-                                                "name": "Handling Exceptions", "parent":"Level 5", "children":[
+                                                "name": "Handling Exceptions", "url":"Try_Catch.html" , "parent":"Level 5", "children":[
                                                     {
-                                                        "name":"Input/Output", "parent": "Level6"
+                                                        "name":"Input/Output", "url":"Input_Output.html" ,"parent": "Level6"
                                                     }
                                                 ]
                                             }
@@ -134,15 +147,15 @@
 
                 //Creating a canvas and appending a group element to place the tree
             var svg = d3.select("body").append("svg")
-                .attr("width", 1000)
-                .attr("height", 1000)
+                .attr("width", 890)
+                .attr("height", 800)
                     .append("g")
                     .attr("transform", "translate(" + 140 + "," + 40 + ")");
 
             root = treeData[0];
 
             update(root);
-
+            
             function update(source) {
 
               // Compute the new tree layout.
@@ -156,11 +169,14 @@
                   .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
               // Enter the nodes.
-              var nodeEnter = node.enter().append("g")
+              var nodeEnter = node.enter()
+                .append("g")
                   .attr("class", "node")
                   .attr("transform", function(d) { 
                       return "translate(" + d.x + "," + d.y + ")"; 
-                  });
+                  })
+                  .append("a")
+                    .attr("xlink:href", function(d){return d.url;})
 
               nodeEnter.append("circle")
                   .attr("r", 10);
@@ -170,7 +186,8 @@
                   .attr("dy", ".35em")
                   .attr("text-anchor", "middle")
                   .text(function(d) { return d.name; })
-                  .style("fill-opacity", 1);
+                  .style("fill-opacity", 1)
+                  .style("font-size", "17px");
 
               // Declare the links…
               var link = svg.selectAll("path.link")
@@ -186,7 +203,5 @@
             </script>
         
         </div>
-        
-    </body>
-    
+    </body>  
 </html

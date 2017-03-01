@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="C:/Users/James/Desktop/Teaching_Aid_App/Resources/stylesheet.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="C:/Users/James/Desktop/Teaching_Aid_App/Script Files/Questions.js"></script>        
         <script src="C:/Users/James/Desktop/Teaching_Aid_App/Script Files/bootstrap.min.js"></script>
     </head>
-<body class = "main_section">
-        
+<body class = "main_section">    
         <nav class = "navbar navbar-default">
             <div class = "container-fluid">
                 <div class = "navbar-header">
@@ -16,7 +16,7 @@
                 
                 <div class = "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class = "nav navbar-nav">
-                        <li class = "active"><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li class = ""><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
                         <li><a href = "Overview.html">Overview</a></li>
                         <li class = "dropdown">
                             <a href = "" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Basic Topics <span class="caret"></span></a>
@@ -73,6 +73,70 @@
                 </div>
             </div>    
         </nav>
+    <div class = "title_section">
+        <h1 class = "main_title">Input/Output Section</h1>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class = "install_tags">Section 3: Input/Output</h3>
+        <br/>
+        <br/>
+        <p>An intresting function in Java is using streams to be able to read in or output to a file. The two stream classes we will look at in this section are PrintWriter and Scanner. Since in our example we
+        will be using files we will also need a File object. Being able to read input/output data is a very useful skill for processing real world data. An example of where reading data was important can be seen
+        in WW2 where a group of brithish computer scientists would read in German transmision and crack their ciphers. </p>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class = "install_tags"> Section 3.1: Reading in data</h3>
+        <br/>
+        <br/>
+        <p>To be able to read in a file we must first intialize a File object using it's constructor which takes a filename in as a parameter. Once we have done this we can pass the File object into the Scanners
+        paramters. Once in we can use Scanner methods inside a while to check if there is a next item in the file, if true we process this information, else it will cancel the loop and we will progress through 
+        the program. Once done processing a file we must close it otherwise the manipulation we have performed will not be saved to the diskspace. One more issue is that if the file does not exist it will throw a
+        FileNotFound Exception, we normally throw this exception on the main method. An example of reading can be seen below:</p>
+        <img src = "C:/Users/James/Desktop/Teaching_Aid_App/Resources/FileInput.png" alt = "Input File Example"/>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class = "install_tags">Section 3.2: Writting in data</h3>
+        <br/>
+        <br/>
+        <p> To be able to output to a file we must first intialize a File object using it's constructor which takes a filename in as a parameter. Once we have done this we can pass the File object into the PrintWriter
+        parameters. We can then allow the user to input information and output it inro the file, once the user has finished inputing information into the file we can the progress onto the next section of the program.
+        Once done processing a file we must close it otherwise the manipulation we have performed will not be saved to the diskspace. One more issue is that if the file does not exist it will throw a
+        FileNotFound Exception, we normally throw this exception on the main method. An example of reading can be seen below:</p>
+        <img src = "C:/Users/James/Desktop/Teaching_Aid_App/Resources/WriteExample.png" alt = "Write File Example"/>
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class="install_tags"> Video Segment </h3>
+        <br/>
+        <br/>
+        <iframe class = "videoTutorial" src="https://www.youtube.com/embed/qURtiJOrtgI" frameborder="0" allowfullscreen></iframe>  
+    </div>
+    <br/>
+    <br/>
+    <div class = "step_section">
+        <h3 class="install_tags"> Question Segment </h3>
+    </div>
+    <div>
+        <br/>
+        <br/>
+        <div id = "question_section">
+        <p><button onClick = "DisplayQuestion('inputOutput')">Question Time!</button></p>
+        <p id = "question"></p>
+        <p id = "answers"></p>
+        <p id = "button"></p>
+        <p id = "score"></p>    
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
     </body>
 </html>
         

@@ -20,7 +20,7 @@
                 
                 <div class = "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class = "nav navbar-nav">
-                        <li class = "active"><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li class = ""><a href = "Index.html">Home<span class="sr-only">(current)</span></a></li>
                         <li><a href = "Overview.html">Overview</a></li>
                         <li class = "dropdown">
                             <a href = "" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Basic Topics <span class="caret"></span></a>
@@ -117,6 +117,9 @@
         <br/>
         <div class = "step_section">
             <h3 class = "install_tags">Video Segment</h3>
+            <br>
+            <br>
+            <iframe class = "videoTutorial" src="https://www.youtube.com/embed/G460KZqmn0o" frameborder="0" allowfullscreen></iframe>  
         </div>
         <br/>
         <br/>
@@ -124,13 +127,12 @@
             <h3 class = "install_tags">Question Segment</h3>
         </div>
         <div>
-            <br/>
-            <br/>
             <div id = "question_section">
-            <p><button onClick = "DisplayQuestion()">Question Time!</button></p>
+            <p><button onClick = "DisplayQuestion('loopPage')">Question Time!</button></p>
             <p id = "question"></p>
             <p id = "answers"></p>
             <p id = "button"></p>
+            <p id = "score"></p>    
             </div>
         </div>
         <br/>
